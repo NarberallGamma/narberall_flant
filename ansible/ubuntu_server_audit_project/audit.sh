@@ -13,7 +13,7 @@ free -h
 echo -e "\n=== [ЦП и ПАМЯТЬ] ==="
 lscpu
 echo
-cat /proc/meminfo | grep -E 'MemTotal|SwapTotal'
+grep -E 'MemTotal|SwapTotal' /proc/meminfo
 
 echo -e "\n=== [ДИСКИ И РАЗДЕЛЫ] ==="
 lsblk -f
